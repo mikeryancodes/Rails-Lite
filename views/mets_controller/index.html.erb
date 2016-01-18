@@ -1,0 +1,16 @@
+<h1>MEET THE METS!!!!</h1>
+
+<% @mets.each_with_index do |met, index| %>
+  <p>
+    <%= met %>
+    <form action='<%= "/mets/#{index}" %>', method="POST">
+      <input type='hidden' name='request_method' value='DELETE'>
+      <input type='submit' value='delete'/>
+    </form>
+    <form action='<%= "/mets/#{index}" %>', method="GET">
+      <input type='submit' value='show'/>
+    </form>
+  </p>
+<% end %>
+
+<a href="/mets/new">New Met!</a>

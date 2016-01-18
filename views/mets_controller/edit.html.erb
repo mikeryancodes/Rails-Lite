@@ -1,0 +1,8 @@
+<form action='<%= "/mets/#{@id}" %>' method="POST">
+  <input type='hidden' name='request_method' value='PUT'>
+  <label>Name
+    <input type="text" name="met" value="<%= @met %>">
+  </label>
+
+  <input type="submit"/>
+</form>
