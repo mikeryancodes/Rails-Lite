@@ -1,7 +1,6 @@
 require 'active_support'
 require 'active_support/core_ext'
 require 'erb'
-require 'byebug'
 require_relative './session'
 
 class ControllerBase
